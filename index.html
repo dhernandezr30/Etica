@@ -78,6 +78,8 @@ ul.dots li::before{content:'●';position:absolute;left:0;color:var(--c);font-si
 #s01{background:var(--violet-lt);--c:var(--violet);}
 #s02{background:var(--mint-lt);--c:var(--mint-dk);}
 #s03{background:var(--punch-lt);--c:var(--punch);}
+#reflexion{background:#fff;}
+
 #s01 .eyebrow,#s01 h3{color:var(--violet-dk);} #s01 .bar{background:var(--violet);} #s01 .box{background:#fff;color:var(--violet-dk);}
 #s02 .eyebrow,#s02 h3{color:var(--mint-dk);} #s02 .bar{background:var(--mint);} #s02 .box{background:#fff;color:var(--mint-dk);}
 #s03 .eyebrow,#s03 h3{color:var(--punch-dk);} #s03 .bar{background:var(--punch);} #s03 .box{background:#fff;color:var(--punch-dk);}
@@ -90,6 +92,21 @@ ul.dots li::before{content:'●';position:absolute;left:0;color:var(--c);font-si
 .pilar h4{font-size:23px;color:var(--sky-dk);margin-bottom:4px;}
 .pilar p{margin:0;font-size:16px;}
 .pilar.alt{border-left-color:var(--sun);background:var(--sun-lt);} .pilar.alt .n,.pilar.alt h4{color:#B37F00;}
+
+/* interactividad añadida */
+.interactive-container{background:var(--sky-lt);border:2px dashed var(--sky);border-radius:14px;padding:24px;margin:30px 0;}
+.interactive-container h3{color:var(--sky-dk);margin-top:0;}
+.quiz-question{font-weight:700;margin-bottom:12px;color:var(--ink);}
+.quiz-options{display:grid;gap:8px;margin-bottom:16px;}
+.quiz-btn{background:#fff;border:2px solid var(--sky);color:var(--sky-dk);padding:10px 16px;border-radius:8px;font-weight:600;cursor:pointer;text-align:left;transition:.2s;}
+.quiz-btn:hover{background:var(--sky);color:#fff;}
+.quiz-feedback{font-weight:600;padding:10px;border-radius:8px;display:none;margin-top:10px;}
+.quiz-feedback.correct{background:var(--mint-lt);color:var(--mint-dk);border:1px solid var(--mint);}
+.quiz-feedback.incorrect{background:var(--punch-lt);color:var(--punch-dk);border:1px solid var(--punch);}
+
+.reflection-box{background:var(--sun-lt);border-left:5px solid var(--sun);padding:16px;border-radius:0 12px 12px 0;margin:16px 0;}
+.reflection-box textarea{width:100%;height:80px;padding:10px;border-radius:8px;border:1px solid #ccc;margin-top:8px;font-family:inherit;resize:vertical;}
+.save-note{background:#B37F00;color:#fff;border:none;padding:8px 14px;border-radius:6px;font-weight:700;cursor:pointer;margin-top:6px;}
 
 .formula{margin-top:44px;text-align:center;font-weight:900;letter-spacing:1px;text-transform:uppercase;font-size:clamp(15px,3vw,22px);color:#fff;padding:22px;border-radius:14px;background:linear-gradient(90deg,var(--punch),var(--sun),var(--mint-dk),var(--violet));}
 
@@ -104,14 +121,14 @@ footer p{margin:4px 0;color:rgba(255,255,255,.85);}
 
 <nav><div class="wrap">
   <a href="#inicio">Inicio</a><a href="#proposito">Propósito</a><a href="#pilares">7 Pilares</a>
-  <a href="#s01">01 Conductas</a><a href="#s02">02 Realidad</a><a href="#s03">03 Ética</a>
+  <a href="#s01">01 Conductas</a><a href="#s02">02 Realidad</a><a href="#s03">03 Ética</a><a href="#reflexion">Zona Interactiva</a>
 </div></nav>
 
 <header class="hero" id="inicio">
   <p class="guia">Guía de</p>
   <h1>MANUAL<span>ÉTICO</span></h1>
   <p class="para">Para profesionales</p>
-  <div class="quote">“La excelencia profesional comienza con la calidad de nuestras decisiones.”</div>
+  <div class="quote">“La excelencia profesional comienza con la calidad di nuestras decisiones.”</div>
   <p class="temas">Conductas y paradigmas • Visión de la realidad • Ética</p>
   <p class="autor">Ética Profesional | Dylan Hernández</p>
 </header>
@@ -121,24 +138,24 @@ footer p{margin:4px 0;color:rgba(255,255,255,.85);}
   <h2>¿Qué significa ser un profesional ético?</h2>
   <div class="bar"></div>
   <p class="lead">No basta con dominar conocimientos técnicos. Un profesional íntegro analiza sus decisiones, reconoce el impacto de sus acciones y actúa con principios aun cuando nadie lo esté observando.</p>
-  <p>Este manual es una guía breve para convertir principios, valores y reflexión en decisiones profesionales responsables.</p>
+  <p>Este manual es una guía breve para convertir principios, valores y reflexión en decisiones profesionales responsables[cite: 1].</p>
 
-  <div class="box"><p class="lbl">Objetivo</p><p>Orientar la conducta profesional mediante principios que favorezcan la integridad, el respeto, la responsabilidad y el servicio.</p></div>
+  <div class="box"><p class="lbl">Objetivo</p><p>Orientar la conducta profesional mediante principios que favorezcan la integridad, el respeto, la responsabilidad y el servicio[cite: 1].</p></div>
 
   <h3 style="color:#B37F00">Tres ideas que lo sostienen</h3>
   <ul class="dots" style="--c:var(--sun)">
-    <li>La conducta refleja nuestras decisiones y hábitos.</li>
-    <li>Los paradigmas influyen en la manera de interpretar la realidad.</li>
-    <li>La ética permite evaluar qué debemos hacer y por qué.</li>
+    <li>La conducta refleja nuestras decisiones y hábitos[cite: 1].</li>
+    <li>Los paradigmas influyen en la manera de interpretar la realidad[cite: 1].</li>
+    <li>La ética permite evaluar qué debemos hacer y por qué[cite: 1].</li>
   </ul>
-  <p style="margin-top:16px">Pasar de la reflexión a la acción: observar, cuestionar, decidir y responder por las consecuencias.</p>
+  <p style="margin-top:16px">Pasar de la reflexión a la acción: observar, cuestionar, decidir y responder por las consecuencias[cite: 1].</p>
 
   <h3 style="color:var(--sky-dk)">Principios fundamentales</h3>
   <div class="grid">
-    <div class="card" style="--c:var(--sky)"><p class="t">Comprender a la gente</p><p>Antes de actuar, un profesional ético busca entender las necesidades, emociones y perspectivas de quienes le rodean. Comprender no significa estar de acuerdo, sino reconocer que cada persona tiene razones válidas para pensar y sentir como lo hace.</p></div>
-    <div class="card" style="--c:var(--sun)"><p class="t" style="color:#B37F00">Motivar a las personas</p><p>Un líder ético inspira a otros a dar lo mejor de sí mismos. Motivar es reconocer el esfuerzo, comunicar con claridad el propósito y crear un entorno donde cada persona sienta que su aporte tiene valor real.</p></div>
-    <div class="card" style="--c:var(--violet)"><p class="t">Justicia</p><p>Actuar con justicia implica tratar a cada persona según lo que merece, sin favoritismos ni prejuicios. La justicia exige imparcialidad en las decisiones y valentía para hacer lo correcto aunque sea incómodo.</p></div>
-    <div class="card" style="--c:var(--punch)"><p class="t">Crítica constructiva</p><p>Dar y recibir críticas con madurez es una habilidad ética esencial. La crítica constructiva señala áreas de mejora con respeto y propósito, sin atacar a la persona. Recibirla con apertura es señal de carácter.</p></div>
+    <div class="card" style="--c:var(--sky)"><p class="t">Comprender a la gente</p><p>Antes de actuar, un profesional ético busca entender las necesidades, emociones y perspectivas de quienes le rodean[cite: 1].</p></div>
+    <div class="card" style="--c:var(--sun)"><p class="t" style="color:#B37F00">Motivar a las personas</p><p>Un líder ético inspira a otros a dar lo mejor de sí mismos, reconociendo el esfuerzo y creando un entorno de valor[cite: 1].</p></div>
+    <div class="card" style="--c:var(--violet)"><p class="t">Justicia</p><p>Actuar con justicia implica tratar a cada persona según lo que merece, sin favoritismos ni prejuicios[cite: 1].</p></div>
+    <div class="card" style="--c:var(--punch)"><p class="t">Crítica constructiva</p><p>Señala áreas de mejora con respeto y propósito, sin atacar a la persona; recibirla es señal de carácter[cite: 1].</p></div>
   </div>
 </div></section>
 
@@ -148,13 +165,13 @@ footer p{margin:4px 0;color:rgba(255,255,255,.85);}
   <div class="bar"></div>
   <p class="lead">El éxito verdadero no se mide solo en resultados: se construye sobre valores que sostienen cada decisión.</p>
   <div class="grid" style="margin-top:22px">
-    <div class="pilar"><p class="n">Pilar 1</p><h4>Honestidad</h4><p>Decir la verdad y actuar con transparencia en todo momento. La honestidad construye confianza y relaciones duraderas. Rechaza la mentira, el engaño y el robo.</p></div>
-    <div class="pilar"><p class="n">Pilar 2</p><h4>Generosidad</h4><p>Dar y compartir sin esperar nada a cambio, con tiempo, conocimiento y atención. Lucha contra el egoísmo y la codicia.</p></div>
-    <div class="pilar"><p class="n">Pilar 3</p><h4>Trabajo duro</h4><p>Mantener la constancia y la dedicación en las metas, sosteniendo el esfuerzo día tras día. Se opone a la pereza y a los atajos fáciles.</p></div>
-    <div class="pilar alt"><p class="n">Pilar 4</p><h4>Perseverancia</h4><p>Seguir adelante ante obstáculos y fracasos sin rendirse. Se opone al desánimo.</p></div>
-    <div class="pilar alt"><p class="n">Pilar 5</p><h4>Humildad</h4><p>Reconocer tus límites y aprender de los demás. Se opone a la soberbia.</p></div>
-    <div class="pilar alt"><p class="n">Pilar 6</p><h4>Disciplina</h4><p>Cumplir lo que te propones aun sin ganas. Se opone al desorden y a la procrastinación.</p></div>
-    <div class="pilar alt"><p class="n">Pilar 7</p><h4>Gratitud</h4><p>Valorar lo que tienes y reconocer a quienes te ayudan. Se opone a la ingratitud.</p></div>
+    <div class="pilar"><p class="n">Pilar 1</p><h4>Honestidad</h4><p>Decir la verdad y actuar con transparencia en todo momento. Rechaza la mentira, el engaño y el robo[cite: 1].</p></div>
+    <div class="pilar"><p class="n">Pilar 2</p><h4>Generosidad</h4><p>Dar y compartir sin esperar nada a cambio, con tiempo, conocimiento y atención[cite: 1].</p></div>
+    <div class="pilar"><p class="n">Pilar 3</p><h4>Trabajo duro</h4><p>Mantener la constancia y la dedicación en las metas, rechazando la pereza y los atajos fáciles[cite: 1].</p></div>
+    <div class="pilar alt"><p class="n">Pilar 4</p><h4>Perseverancia</h4><p>Seguir adelante ante obstáculos y fracasos sin rendirse frente al desánimo[cite: 1].</p></div>
+    <div class="pilar alt"><p class="n">Pilar 5</p><h4>Humildad</h4><p>Reconocer tus límites y aprender de los demás oponiéndose a la soberbia[cite: 1].</p></div>
+    <div class="pilar alt"><p class="n">Pilar 6</p><h4>Disciplina</h4><p>Cumplir lo que te propones aun sin ganas, venciendo el desorden y la procrastinación[cite: 1].</p></div>
+    <div class="pilar alt"><p class="n">Pilar 7</p><h4>Gratitud</h4><p>Valorar lo que tienes y reconocer a quienes te ayudan[cite: 1].</p></div>
   </div>
 </div></section>
 
@@ -162,65 +179,135 @@ footer p{margin:4px 0;color:rgba(255,255,255,.85);}
   <p class="eyebrow">01 • Conductas y paradigmas</p>
   <h2>Lo que pienso guía lo que hago</h2>
   <div class="bar"></div>
-  <p class="lead">La conducta es el comportamiento que manifestamos frente a las situaciones y relaciones de nuestro entorno. Los paradigmas funcionan como marcos de referencia: influyen en cómo interpretamos los hechos, juzgamos las situaciones y elegimos actuar.</p>
-  <div class="box"><p class="lbl">Paradigma</p><p>Es un modelo mental o marco de referencia que actúa como un “mapa” para interpretar la realidad y orientar la conducta.</p></div>
+  <p class="lead">La conducta manifiesta nuestro comportamiento, mientras que los paradigmas actúan como marcos de referencia o "mapas" mentales para interpretar la realidad[cite: 2].</p>
+  <div class="box"><p class="lbl">Paradigma</p><p>Modelo mental que actúa como un "mapa" para interpretar la realidad y orientar la conducta[cite: 2].</p></div>
   <h3>Reglas para un profesional</h3>
   <ol class="rules">
-    <li><b>Cuestiona tus supuestos.</b>Antes de juzgar una situación, pregunta qué creencia o experiencia está influyendo en tu interpretación.</li>
-    <li><b>Observa tu conducta.</b>Identifica hábitos que favorecen o perjudican tu desempeño y conviértelos en oportunidades de mejora.</li>
-    <li><b>Sé flexible.</b>Un paradigma puede limitarte. Escuchar otras perspectivas permite aprender y corregir.</li>
-    <li><b>Actúa con coherencia.</b>Tus valores deben reflejarse en decisiones, palabras, trato y cumplimiento de responsabilidades.</li>
+    <li><b>Cuestiona tus supuestos.</b> Pregunta qué creencia o experiencia está influyendo en tu interpretación antes de juzgar[cite: 2].</li>
+    <li><b>Observa tu conducta.</b> Identifica hábitos que favorecen o perjudican tu desempeño[cite: 2].</li>
+    <li><b>Sé flexible.</b> Escucha otras perspectivas para aprender y corregir limitaciones[cite: 2].</li>
+    <li><b>Actúa con coherencia.</b> Refleja tus valores en tus decisiones, palabras y trato[cite: 2].</li>
   </ol>
-  <div class="box"><p class="lbl">Autoevaluación</p><p>¿Qué creencia personal podría estar afectando hoy la forma en que trato a mis compañeros, clientes o usuarios?</p></div>
+  <div class="box"><p class="lbl">Autoevaluación</p><p>¿Qué creencia personal podría estar afectando hoy la forma en que trato a mis compañeros, clientes o usuarios?[cite: 2]</p></div>
 </div></section>
 
 <section id="s02"><div class="wrap">
   <p class="eyebrow">02 • Una visión de la realidad</p>
   <h2>Ver antes de juzgar</h2>
   <div class="bar"></div>
-  <p class="lead">La realidad profesional no depende únicamente de lo que creemos percibir. Nuestra experiencia, valores, lenguaje y paradigmas pueden influir en la interpretación de los hechos. Actuar éticamente exige distinguir entre hechos, interpretaciones y prejuicios.</p>
+  <p class="lead">Actuar éticamente exige distinguir entre hechos comprobables, interpretaciones y prejuicios, evitando caer en decisiones impulsivas[cite: 2].</p>
   <h3>Principios para interpretar mejor</h3>
   <ul class="dots" style="--c:var(--mint)">
-    <li>Busca información antes de emitir juicios.</li>
-    <li>Escucha activamente a las personas involucradas.</li>
-    <li>Distingue hechos comprobables de opiniones.</li>
-    <li>Reconoce que puedes estar equivocado.</li>
-    <li>Considera las consecuencias de tu interpretación.</li>
-    <li>Mantén apertura ante nuevas evidencias.</li>
+    <li>Busca información antes de emitir juicios[cite: 2].</li>
+    <li>Escucha activamente a las personas involucradas[cite: 2].</li>
+    <li>Distingue hechos comprobables de opiniones[cite: 2].</li>
+    <li>Reconoce que puedes estar equivocado[cite: 2].</li>
+    <li>Considera las consecuencias de tu interpretación[cite: 2].</li>
+    <li>Mantén apertura ante nuevas evidencias[cite: 2].</li>
   </ul>
-  <div class="box"><p class="lbl">Visión profesional</p><p>Una persona ética no se limita a preguntar “¿qué ocurrió?”, también pregunta “¿cómo lo estoy interpretando?” y “¿qué otras perspectivas debo considerar?”.</p></div>
+  <div class="box"><p class="lbl">Visión profesional</p><p>Una persona ética pregunta: "¿Qué ocurrió?", "¿Cómo lo estoy interpretando?" y "¿Qué otras perspectivas considerar?"[cite: 2].</p></div>
   <h3>De la percepción a la decisión</h3>
   <div class="pasos"><span>OBSERVAR</span><i>→</i><span>INTERPRETAR</span><i>→</i><span>VERIFICAR</span><i>→</i><span>VALORAR</span><i>→</i><span>DECIDIR</span><i>→</i><span>ACTUAR</span><i>→</i><span>EVALUAR</span></div>
-  <p>Este proceso ayuda a reducir decisiones impulsivas y favorece respuestas responsables ante conflictos, errores, presión o información incompleta.</p>
-  <div class="box"><p class="lbl">Compromiso</p><p>No convertiré una primera impresión en una sentencia. Buscaré comprender antes de decidir.</p></div>
 </div></section>
 
 <section id="s03"><div class="wrap">
   <p class="eyebrow">03 • Una mirada a la ética</p>
   <h2>Elegir lo correcto</h2>
   <div class="bar"></div>
-  <p class="lead">La ética orienta la conducta mediante principios y valores que permiten evaluar nuestras decisiones y su impacto. En el ámbito profesional, la integridad se demuestra cuando existe coherencia entre lo que se piensa, se dice y se hace.</p>
+  <p class="lead">La integridad se demuestra cuando existe coherencia absoluta entre lo que se piensa, se dice y se hace[cite: 2].</p>
   <h3>Código ético personal</h3>
   <ol class="rules">
-    <li><b>Integridad.</b>Ser honesto, actuar con transparencia y evitar aprovecharse de la confianza recibida.</li>
-    <li><b>Responsabilidad.</b>Cumplir compromisos, reconocer errores y responder por las consecuencias de las propias decisiones.</li>
-    <li><b>Respeto.</b>Tratar a cada persona con dignidad, escuchar sin discriminar y cuidar la forma de comunicar.</li>
-    <li><b>Justicia.</b>Buscar equidad e imparcialidad, evitando favoritismos y conflictos de interés.</li>
-    <li><b>Confidencialidad.</b>Proteger la información confiada y compartirla únicamente cuando exista una razón legítima.</li>
-    <li><b>Excelencia.</b>Mantener aprendizaje continuo y procurar que el trabajo alcance estándares de calidad.</li>
-    <li><b>Servicio.</b>Usar los conocimientos y capacidades profesionales para aportar valor y bienestar a otros.</li>
+    <li><b>Integridad.</b> Ser honesto, transparente y evitar aprovecharse de la confianza[cite: 2].</li>
+    <li><b>Responsabilidad.</b> Cumplir compromisos y responder por las consecuencias[cite: 2].</li>
+    <li><b>Respeto.</b> Tratar con dignidad y escuchar sin discriminar[cite: 2].</li>
+    <li><b>Justicia.</b> Buscar equidad y evitar favoritismos o conflictos de interés[cite: 2].</li>
+    <li><b>Confidencialidad.</b> Proteger la información confiada legítimamente[cite: 2].</li>
+    <li><b>Excelencia.</b> Mantener aprendizaje continuo y calidad en el trabajo[cite: 2].</li>
+    <li><b>Servicio.</b> Usar capacidades para aportar valor y bienestar a otros[cite: 2].</li>
   </ol>
-  <div class="box"><p class="lbl">Mi compromiso</p><p>Mis decisiones deben reflejar mis valores, respetar a las personas y considerar las consecuencias de mis actos.</p></div>
-  <div class="formula">Conocimiento + Carácter + Responsabilidad = Profesional íntegro</div>
+  <div class="formula">Conocimiento + Carácter + Responsabilidad = Profesional íntegro[cite: 2]</div>
+</div></section>
+
+<!-- NUEVA SECCIÓN INTERACTIVA: PREGUNTAS Y CASOS PARA PENSAR -->
+<section id="reflexion"><div class="wrap">
+  <p class="eyebrow">Zona Interactiva</p>
+  <h2>Preguntas y Casos para Pensar</h2>
+  <div class="bar"></div>
+  <p class="lead">Pon a prueba tu criterio profesional resolviendo este mini-test y reflexionando sobre tus compromisos éticos.</p>
+
+  <!-- Simulador de Casos / Quiz -->
+  <div class="interactive-container">
+    <h3>🧠 Simulador de Decisiones Éticas</h3>
+    
+    <div class="quiz-question">1. Un compañero de trabajo comete un error grave en un informe y nadie más se ha dado cuenta, pero te afecta directamente. Según el proceso de la ética profesional, ¿qué deberías hacer primero?</div>
+    <div class="quiz-options">
+      <button class="quiz-btn" onclick="checkAnswer(1, false, this)">A) Reportarlo inmediatamente con el jefe sin decirle nada para quedar bien.</button>
+      <button class="quiz-btn" onclick="checkAnswer(1, true, this)">B) Observar, buscar información objetiva y hablar con él constructivamente antes de juzgar.</button>
+      <button class="quiz-btn" onclick="checkAnswer(1, false, this)">C) Ignorarlo por completo para evitar problemas personales.</button>
+    </div>
+    <div id="feedback-1" class="quiz-feedback"></div>
+
+    <div class="quiz-question" style="margin-top:24px;">2. ¿Cuál de los siguientes enunciados define mejor un "Paradigma" en el ámbito profesional?</div>
+    <div class="quiz-options">
+      <button class="quiz-btn" onclick="checkAnswer(2, false, this)">A) Una regla obligatoria impuesta por la empresa.</button>
+      <button class="quiz-btn" onclick="checkAnswer(2, true, this)">B) Un modelo mental o marco de referencia que actúa como "mapa" para interpretar la realidad.</button>
+      <button class="quiz-btn" onclick="checkAnswer(2, false, this)">C) Un error técnico que se puede corregir con capacitación.</button>
+    </div>
+    <div id="feedback-2" class="quiz-feedback"></div>
+  </div>
+
+  <!-- Cuaderno de Reflexión Personal -->
+  <div class="reflection-box">
+    <h3 style="color:#B37F00; margin-top:0;">📝 Tu Espacio de Reflexión Ética</h3>
+    <p style="margin-bottom:6px; font-size:15px;">Escribe una breve meta personal sobre qué hábito profesional mejorarás esta semana basándote en los 7 Pilares:</p>
+    <textarea id="userReflection" placeholder="Ejemplo: Ser más disciplinado y evitar la procrastinación en mis entregas..."></textarea>
+    <button class="save-note" onclick="saveReflection()">Guardar mi compromiso</button>
+    <p id="savedMessage" style="font-size:13px; color:#04B885; margin-top:6px; font-weight:700; display:none;">¡Compromiso guardado localmente con éxito!</p>
+  </div>
+
 </div></section>
 
 <footer>
   <p class="nombre">Dylan Hernández</p>
   <p>0901-23-519</p>
   <p>Curso: Ética Profesional</p>
-  <p style="margin-top:14px;font-size:14px">Referencia base: La Red Business Network. Desarrollo Humano y Profesional, Libro 2: Ética. Principios para una vida plena. Nueva edición, 2018.</p>
+  <p style="margin-top:14px;font-size:14px">Referencia base: La Red Business Network. Desarrollo Humano y Profesional, Libro 2: Ética. Principios para una vida plena. Nueva edición, 2018[cite: 1, 2].</p>
   <p class="tag">Ética • Carácter • Responsabilidad</p>
 </footer>
+
+<script>
+function checkAnswer(questionNum, isCorrect, buttonElement) {
+  const feedbackEl = document.getElementById('feedback-' + questionNum);
+  // Desactivar botones de esa pregunta tras responder
+  const parentOptions = buttonElement.parentElement.querySelectorAll('.quiz-btn');
+  parentOptions.forEach(btn => btn.style.pointerEvents = 'none');
+
+  feedbackEl.style.display = 'block';
+  if (isCorrect) {
+    feedbackEl.className = 'quiz-feedback correct';
+    feedbackEl.innerHTML = '¡Correcto! Demuestras una excelente comprensión de los principios éticos y del análisis reflexivo.';
+    buttonElement.style.background = 'var(--mint)';
+    buttonElement.style.color = '#fff';
+  } else {
+    feedbackEl.className = 'quiz-feedback incorrect';
+    feedbackEl.innerHTML = 'Incorrecto. Recuerda los principios del manual: busca comprender antes de actuar y evalúa el impacto de tus decisiones.';
+    buttonElement.style.background = 'var(--punch)';
+    buttonElement.style.color = '#fff';
+  }
+}
+
+function saveReflection() {
+  const text = document.getElementById('userReflection').value;
+  if(text.trim() !== "") {
+    localStorage.setItem('etica_compromiso_dylan', text);
+    const msg = document.getElementById('savedMessage');
+    msg.style.display = 'block';
+    setTimeout(() => { msg.style.display = 'none'; }, 4000);
+  } else {
+    alert("Por favor escribe un breve compromiso antes de guardar.");
+  }
+}
+</script>
 
 </body>
 </html>
